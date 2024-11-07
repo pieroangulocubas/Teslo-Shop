@@ -26,7 +26,6 @@ export default function () {
           type="email" />
 
         <button
-          
           className="btn-primary">
           Crear cuenta
         </button>
