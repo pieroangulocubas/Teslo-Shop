@@ -15,10 +15,11 @@ CREATE TABLE "Category" (
 -- CreateTable
 CREATE TABLE "Product" (
     "id" TEXT NOT NULL,
+    "title" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "inStock" INTEGER NOT NULL,
     "price" DOUBLE PRECISION NOT NULL DEFAULT 0,
-    "size" "Size"[] DEFAULT ARRAY[]::"Size"[],
+    "sizes" "Size"[] DEFAULT ARRAY[]::"Size"[],
     "slug" TEXT NOT NULL,
     "tags" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "gender" "Gender" NOT NULL,
